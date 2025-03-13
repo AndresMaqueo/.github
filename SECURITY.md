@@ -1,31 +1,69 @@
-Thanks for helping make GitHub safe for everyone.
+## 📌 Política Avanzada de Seguridad y Privacidad para Azure y GitHub
 
-## Security
+### 🔐 1. Autenticación y Acceso
+- **Azure Active Directory (Entra ID)**
+  - Autenticación multifactor obligatoria con tokens físicos (FIDO/YubiKey).
+  - Desactivar MFA basado en SMS.
+  - Integración obligatoria con autenticación condicional para accesos críticos.
 
-GitHub takes the security of our software products and services seriously, including all of the open source code repositories managed through our GitHub organizations, such as [GitHub](https://github.com/GitHub).
+### 🛡️ 2. Administración de Privilegios
 
-Even though [open source repositories are outside of the scope of our bug bounty program](https://bounty.github.com/index.html#scope) and therefore not eligible for bounty rewards, we will ensure that your finding gets passed along to the appropriate maintainers for remediation. 
+- Implementar Azure Privileged Identity Management (PIM).
+- Activar Just-In-Time (JIT) para todos los accesos elevados.
+- Realizar auditorías periódicas automáticas mediante Azure Sentinel.
 
-## Reporting Security Issues
+### 📁 3. Gestión del Repositorio GitHub
 
-If you believe you have found a security vulnerability in any GitHub-owned repository, please report it to us through coordinated disclosure.
+- Repositorios privados cifrados.
+- Protección obligatoria de ramas principales (`main`, `prod`) con políticas estrictas.
+- Código revisado mediante Pull Requests obligatorios (mínimo 2 aprobadores).
+- Acceso protegido mediante autenticación multifactor con claves FIDO/YubiKey.
 
-**Please do not report security vulnerabilities through public GitHub issues, discussions, or pull requests.**
+### 🧩 4. Integración Continua y Seguridad en Azure DevOps
 
-Instead, please send an email to opensource-security[@]github.com.
+- Implementar escaneo automático de vulnerabilidades usando herramientas como Dependabot o GitHub Advanced Security.
+- Forzar políticas de revisión de código obligatoria para cada pull request.
+- Configurar Azure Pipelines con comprobaciones automáticas antes de despliegues.
 
-Please include as much of the information listed below as you can to help us better understand and resolve the issue:
+### 🚦 5. Protección de Datos
 
-  * The type of issue (e.g., buffer overflow, SQL injection, or cross-site scripting)
-  * Full paths of source file(s) related to the manifestation of the issue
-  * The location of the affected source code (tag/branch/commit or direct URL)
-  * Any special configuration required to reproduce the issue
-  * Step-by-step instructions to reproduce the issue
-  * Proof-of-concept or exploit code (if possible)
-  * Impact of the issue, including how an attacker might exploit the issue
+- Uso obligatorio de Azure Key Vault para gestión de secretos.
+- Activar cifrado integral en tránsito y almacenamiento mediante Azure Key Vault.
+- Implementar copias de seguridad automáticas en Azure Blob Storage con cifrado.
 
-This information will help us triage your report more quickly.
+### ⚙️ 5. Automatización Avanzada con Power Automate y Power Apps
 
-## Policy
+- Automatizar el registro y monitoreo de todas las actividades sensibles en GitHub y Azure.
+- Crear dashboards personalizados en Power BI (Fabric) para visualización en tiempo real del cumplimiento de seguridad.
 
-See [GitHub's Safe Harbor Policy](https://docs.github.com/en/site-policy/security-policies/github-bug-bounty-program-legal-safe-harbor)
+### 📊 6. Gobernanza y Auditoría Continua con Power BI y Fabric
+
+- Monitorear en tiempo real la adherencia a esta política mediante informes visuales automáticos.
+- Utilizar Microsoft Fabric para gestionar datos de auditoría, métricas de seguridad y alertas críticas.
+
+### 🔍 6. Auditoría y Cumplimiento
+
+- Activar Microsoft Defender for Cloud para el análisis continuo de recursos.
+- Establecer notificaciones automáticas en caso de detección de cambios críticos.
+- Realizar pruebas regulares de penetración y simulaciones de ataques mediante Microsoft Defender.
+
+### 📡 7. Seguridad de Red
+
+- Utilizar Azure Firewall y Azure Front Door para proteger servicios externos e internos.
+- Configurar reglas estrictas en Azure Firewall para limitar accesos a redes y recursos internos.
+
+### 📌 7. Responsabilidades y Capacitación
+
+- Capacitación continua obligatoria sobre prácticas seguras en Azure y GitHub para todos los usuarios.
+- Roles claramente definidos con privilegios mínimos necesarios según función.
+
+### 🚨 8. Plan de Respuesta ante Incidentes
+
+- Creación y automatización de un protocolo de respuesta ante incidentes integrando Azure Sentinel con Power Automate.
+- Pruebas trimestrales del plan de respuesta automatizadas.
+
+---
+
+⚠️ **Importante:** Todas estas políticas deberán revisarse y actualizarse trimestralmente para adaptarse continuamente a las amenazas emergentes y los cambios en tu infraestructura tecnológica.
+
+
