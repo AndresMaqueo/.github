@@ -1,5 +1,20 @@
-# .github
+# 🛠️ Infraestructura de Gobernanza GitHub
 
-*Community health files for the [@GitHub](https://github.com/github) organization*
+Este repositorio contiene las configuraciones y políticas automatizadas para validar, proteger y optimizar cualquier proyecto GitHub profesional.
 
-For more information, please see the article on [creating a default community health file for your organization](https://help.github.com/en/articles/creating-a-default-community-health-file-for-your-organization).
+## ✅ Incluye
+
+- Validación con **Repolinter**
+- Análisis de seguridad con **CodeQL**
+- Actualización de dependencias con **Dependabot**
+- Configuración lista para usar como plantilla en nuevos proyectos
+
+---
+
+### 📌 Construido por
+
+**Andres Maqueo Infanzon**  
+🔗 [inversionand.com](https://inversionand.com)  
+📧 innovacapital@inversionand.com  
+
+🔒 Seguridad | ⚙️ Automatización | 💡 Innovación | 🤖 IA + DevSecOps
