@@ -1,48 +1,57 @@
-📌 Política de Seguridad para Microsoft Teams (Avanzada y Sofisticada)
-✅ Objetivo
-Garantizar la seguridad, integridad y cumplimiento de Microsoft Teams sin afectar la colaboración ni la experiencia de los usuarios. Se enfoca en protección avanzada contra amenazas, control de acceso granular, auditoría en tiempo real y optimización del rendimiento.
+## 📌 Política Avanzada de Seguridad y Privacidad para Azure y GitHub
 
-🔒 1. Control de Acceso Seguro
-🔹 Autenticación y Autorización
-✔ Requerir autenticación multifactor (MFA):
+### 🔐 1. Autenticación y Acceso
+- **Azure Active Directory (Entra ID)**
+  - Autenticación multifactor obligatoria con tokens físicos (FIDO/YubiKey).
+  - Desactivar MFA basado en SMS.
+  - Integración obligatoria con autenticación condicional para accesos críticos.
 
-Implementar MFA obligatoria para administradores y usuarios clave.
-Usar Azure AD Conditional Access para exigir MFA en ubicaciones o dispositivos desconocidos.
-✔ Integración con Entra ID (Azure AD) para autenticación única (SSO) y administración centralizada.
-✔ Deshabilitar autenticación heredada para evitar ataques de fuerza bruta.
-🔹 Gestión de Dispositivos y Sesiones
-✔ Habilitar Microsoft Defender for Endpoint para monitorear dispositivos.
-✔ Configurar acceso condicional para permitir solo dispositivos gestionados o seguros.
-✔ Definir un límite de sesión en Teams para cerrar sesiones inactivas y reducir el riesgo de acceso no autorizado.
+### 🛡️ 2. Administración de Privilegios
+- Implementar Azure Privileged Identity Management (PIM).
+- Activar Just-In-Time (JIT) para todos los accesos elevados.
+- Realizar auditorías periódicas automáticas mediante Azure Sentinel.
 
-🔍 2. Protección de Información Sensible
-🔹 Prevención de Fugas de Datos (DLP)
-✔ Bloquear el uso de datos sensibles en Teams con Microsoft Purview DLP.
-✔ Crear reglas para restringir la compartición de archivos confidenciales (ej. Finanzas, Contratos, Datos Personales).
-✔ Auditoría en tiempo real para detectar y prevenir filtraciones de datos.
+### 📁 3. Gestión del Repositorio GitHub
+- Repositorios privados cifrados.
+- Protección obligatoria de ramas principales (`main`, `prod`) con políticas estrictas.
+- Código revisado mediante Pull Requests obligatorios (mínimo 2 aprobadores).
+- Acceso protegido mediante autenticación multifactor con claves FIDO/YubiKey.
 
-🔹 Clasificación y Cifrado de Datos
-✔ Configurar etiquetas de sensibilidad en Microsoft Purview para cifrar y restringir acceso.
-✔ Obligar cifrado de extremo a extremo en reuniones con información crítica.
+### 🧩 4. Integración Continua y Seguridad en Azure DevOps
+- Implementar escaneo automático de vulnerabilidades usando herramientas como Dependabot o GitHub Advanced Security.
+- Forzar políticas de revisión de código obligatoria para cada pull request.
+- Configurar Azure Pipelines con comprobaciones automáticas antes de despliegues.
 
-🛡️ 3. Protección contra Amenazas
-🔹 Monitoreo y Respuesta Automática
-✔ Habilitar Microsoft Defender for Office 365 para detectar y bloquear ataques de phishing y malware en chats y archivos.
-✔ Activar detección de amenazas en Teams con Microsoft Sentinel para identificar patrones de comportamiento sospechosos.
-✔ Crear alertas de seguridad avanzadas para inicios de sesión anómalos, intentos de acceso desde IPs sospechosas y modificaciones de configuración críticas.
+### 🚦 5. Protección de Datos
+- Uso obligatorio de Azure Key Vault para gestión de secretos.
+- Activar cifrado integral en tránsito y almacenamiento mediante Azure Key Vault.
+- Implementar copias de seguridad automáticas en Azure Blob Storage con cifrado.
 
-🏢 4. Gestión de Permisos y Privilegios
-✔ Aplicar el principio de privilegio mínimo (PoLP) para administradores y usuarios.
-✔ Restringir creación de Teams públicos a usuarios autorizados.
-✔ Bloquear la invitación de usuarios externos a menos que se apruebe por IT.
-✔ Habilitar revisiones automáticas de permisos en Microsoft Entra.
+### ⚙️ 6. Automatización Avanzada con Power Automate y Power Apps
+- Automatizar el registro y monitoreo de todas las actividades sensibles en GitHub y Azure.
+- Crear dashboards personalizados en Power BI y Microsoft Fabric para visualización en tiempo real del cumplimiento de seguridad.
 
-🛠️ 5. Configuración Avanzada de Teams
-✔ Bloquear aplicaciones no autorizadas en Teams con Microsoft App Governance.
-✔ Habilitar restricciones en reuniones y canales para prevenir acceso no autorizado.
-✔ Auditar y restringir el acceso de bots y conectores externos.
+### 📊 7. Gobernanza y Auditoría Continua con Power BI y Fabric
+- Monitorear en tiempo real la adherencia a esta política mediante informes visuales automáticos.
+- Utilizar Microsoft Fabric para gestionar datos de auditoría, métricas de seguridad y alertas críticas.
 
-📊 6. Auditoría y Cumplimiento
-✔ Activar registros de auditoría en Microsoft Purview para monitorear cambios críticos.
-✔ Habilitar el Centro de Cumplimiento para reportes de seguridad y análisis de vulnerabilidades.
-✔ Automatizar la revisión de políticas para detectar desviaciones en la seguridad.
+### 🔍 8. Auditoría y Cumplimiento
+- Activar Microsoft Defender for Cloud para el análisis continuo de recursos.
+- Establecer notificaciones automáticas en caso de detección de cambios críticos.
+- Realizar pruebas regulares de penetración y simulaciones de ataques mediante Microsoft Defender.
+
+### 📡 9. Seguridad de Red
+- Utilizar Azure Firewall y Azure Front Door para proteger servicios externos e internos.
+- Configurar reglas estrictas en Azure Firewall para limitar accesos a redes y recursos internos.
+
+### 📌 10. Responsabilidades y Capacitación
+- Capacitación continua obligatoria sobre prácticas seguras en Azure y GitHub para todos los usuarios.
+- Roles claramente definidos con privilegios mínimos necesarios según función.
+
+### 🚨 11. Plan de Respuesta ante Incidentes
+- Creación y automatización de un protocolo de respuesta ante incidentes integrando Azure Sentinel con Power Automate.
+- Pruebas trimestrales del plan de respuesta automatizadas.
+
+---
+
+⚠️ **Importante:** Todas estas políticas deberán revisarse y actualizarse trimestralmente para adaptarse continuamente a las amenazas emergentes y a los cambios en tu infraestructura tecnológica.
